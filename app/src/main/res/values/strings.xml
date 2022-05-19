@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Battery Manager</string>
+    <string name="battery_manger">Battery Manger</string>
+    <string name="this_app_is">This App Is</string>
+    <string name="up_wave">up_wave</string>
+    <string name="check_your_battery_state">Check Your Battery State</string>
+    <string name="vlotage">Vlotage</string>
+    <string name="plug_state">Plug State</string>
+    <string name="technology">Technology</string>
+    <string name="temperature">Temperature</string>
+    <string name="voltage">Voltage</string>
+    <string name="plugged_in">Plugged In</string>
+    <string name="plugged_out">Plugged Out</string>
+    <string name="charge_symbol">Charge Symbol</string>
+    <string name="battery_manager">Battery Manager</string>
+</resources>
