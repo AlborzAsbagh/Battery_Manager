@@ -4,9 +4,12 @@ import alborz.rad.batterymanager.adapter.BatteryUsageAdapter
 import alborz.rad.batterymanager.databinding.ActivityUsageBatteryBinding
 import alborz.rad.batterymanager.models.BatteryModel
 import alborz.rad.batterymanager.utilies.BatteryUsage
+import android.content.Intent
 import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Gravity
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 
 
@@ -21,6 +24,9 @@ class UsageBatteryActivity : AppCompatActivity() {
         val batteryUsage = BatteryUsage(this)
         var appStatsList: MutableList<BatteryModel> = ArrayList()
 
+        if(batteryUsage.getUsageStatsList().isEmpty()) {
+
+        }
         for (item in batteryUsage.getUsageStatsList()) {
 
             if (item.totalTimeInForeground > 1000) {
@@ -39,6 +45,7 @@ class UsageBatteryActivity : AppCompatActivity() {
         binding.recyclerview.layoutManager = LinearLayoutManager(this)
         binding.recyclerview.adapter = adapter
     }
+
 }
 
 
